@@ -24,7 +24,9 @@ function moderateOutput(text) {
 
 //ai api calling loic
 const chatWithAI = async (userPrompt)=>{
-    if(!isSafeInput)return "❌ Your input violated the moderation policy.";
+    if(!isSafeInput(userPrompt)){
+        return "❌ Your input violated the moderation policy.";
+    }
     const systemPrompt = "You are a friendly, respectful assistant who gives safe and helpful answers.";
 
     try{
