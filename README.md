@@ -67,3 +67,8 @@ node chat.mjs
 setx OPENAI_API_KEY "sk-your-api-key-here"
 node chat.mjs
 ```
+
+### 4️ Run the program
+```bash
+node chat.mjs
+```
